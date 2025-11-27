@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Velocity Stack | Goal Aligner</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <h1>The Velocity Stack</h1>
+        <p>Aligning Minutes to Decades. Based on the Goal Stack Methodology.</p>
+    </header>
+
+    <main>
+        <section id="input-panel">
+            <h2>Define Your Trajectory</h2>
+            <div class="input-group">
+                <label for="purpose">1. Your Purpose (The Problem to Solve):</label>
+                <input type="text" id="purpose" placeholder="e.g., Increase access to clean water in my community">
+            </div>
+            <div class="input-group">
+                <label for="hhg">2. High Hard Goal (HHG) - 1-5 Years:</label>
+                <input type="text" id="hhg" placeholder="e.g., Secure funding and launch 5 clean water projects by 2028">
+            </div>
+            <button onclick="generateGoalStack()">Build My Stack</button>
+        </section>
+
+        <hr>
+
+        <section id="goal-container">
+            <div id="goal-stack-visual">
+                <div class="stack-layer" id="layer-daily" data-timeframe="Daily">Daily GDAs (Clear Goals)</div>
+                <div class="stack-layer" id="layer-weekly" data-timeframe="Weekly">Weekly Actions (3-5 GDAs)</div>
+                <div class="stack-layer" id="layer-monthly" data-timeframe="Monthly">Monthly Outcome (1 Project)</div>
+                <div class="stack-layer" id="layer-quarterly" data-timeframe="Quarterly">Quarterly Goal (90-Day Outcome)</div>
+                <div class="stack-layer" id="layer-yearly" data-timeframe="Yearly">Annual Goals (3-5 Milestones)</div>
+                <div class="stack-layer" id="layer-hhg" data-timeframe="HHG">HHG (1-5 Years)</div>
+                <div class="stack-layer" id="layer-purpose" data-timeframe="Purpose">Purpose (Infinite)</div>
+            </div>
+
+            <div id="action-advice-panel">
+                <h2>Goal Breakdown Advice</h2>
+                <p class="instruction-text">Enter your goals and click "Build My Stack" to start receiving actionable advice at each level.</p>
+                <div id="advice-content">
+                    </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 The Velocity Stack. Framework inspired by Flow Research Collective Goal Stack.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
